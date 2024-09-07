@@ -1,0 +1,29 @@
+{
+    "name":"Phillip",
+    "description":"Download videos from various websites using this telegram bot",
+    "repository":"",
+    "stack": "heroku-20",
+    "buildpacks":[
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "env": {
+        
+        "BOT_TOKEN":{
+            "description":"Get from BotFather",
+            "value":""
+        },
+        "AUTH_USERS":{
+            "description":"Users who can use",
+            "value":""
+        }    
+    }
+    
+}
